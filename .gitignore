@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+.vscode
+.ipynb_checkpoints
+/server/__pycache__
+**/*.pyc
+/puppeteer-scraper/node_modules

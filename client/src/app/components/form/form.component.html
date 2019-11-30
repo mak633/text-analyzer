@@ -1,0 +1,16 @@
+<div fxLayout="row" class="content">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate fxFlex="40%">
+  
+    <mat-form-field class="w-100">
+      <textarea matInput placeholder="Текст для аналізу" rows="5" formControlName="text"></textarea>
+    </mat-form-field>
+  
+    <div>
+      <button type="submit" mat-raised-button color="primary">YO</button>
+    </div>
+  </form>
+  <div class="results">
+    <h3>Результати:</h3>
+    <h4 *ngIf="result">Sentiment: {{result?.sentiment}}</h4>
+  </div>
+</div>
